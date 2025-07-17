@@ -26,7 +26,11 @@ A **distribution (distro)** is a customized version of Linux that includes the O
 
 ---
 
+
 ## 🗂️ Linux Directory Structure
+
+<img width="580" height="267" alt="image" src="https://github.com/user-attachments/assets/367db036-2c23-41e7-b892-e7114fc6acbc" />
+
 
 Linux follows a **hierarchical directory structure** starting from `/` (root directory).
 
