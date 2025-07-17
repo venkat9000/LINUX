@@ -37,19 +37,28 @@ Linux follows a **hierarchical directory structure** starting from `/` (root dir
 
 ### 🔍 Key Directories Explained
 
-| Directory | Description |
-|----------|-------------|
-| `/`      | Root directory: top-most directory |
-| `/bin`   | Essential binary executables (e.g., `ls`, `cp`, `mv`) |
-| `/sbin`  | System binaries for administration (e.g., `reboot`, `fdisk`) |
-| `/etc`   | Configuration files (e.g., `/etc/passwd`) |
-| `/home`  | User directories (`/home/user1`, `/home/user2`) |
-| `/dev`   | Hardware devices as files (e.g., `/dev/sda`) |
-| `/root`  | Home directory of the root (admin) user |
-| `/opt`   | Optional third-party software packages |
-| `/lib`   | Shared libraries required by system binaries |
-| `/proc`  | Virtual filesystem providing system info (e.g., `/proc/cpuinfo`) |
-| `/tmp`   | Temporary files, cleared on reboot |
+| Directory | Description | Examples |
+|----------|-------------|----------|
+| `/` | Root directory: the top-most directory that contains all files and directories | N/A (base of everything) |
+| `/bin` | Essential binary executables used by all users | `ls`, `cp`, `mv`, `cat`, `echo`, `pwd`, `touch` |
+| `/sbin` | System binaries for system administration, used mostly by root | `reboot`, `shutdown`, `fdisk`, `ifconfig`, `iptables`, `fsck` |
+| `/etc` | Configuration files for the system and installed applications | `/etc/passwd`, `/etc/fstab`, `/etc/hostname`, `/etc/ssh/sshd_config` |
+| `/home` | Home directories for regular users | `/home/alice`, `/home/bob`, user-specific files like `Documents`, `Downloads` |
+| `/dev` | Device files representing hardware | `/dev/sda`, `/dev/null`, `/dev/tty`, `/dev/usb/lp0`, `/dev/random` |
+| `/root` | Home directory of the root (superuser/admin) | `/root/.bashrc`, `/root/scripts` |
+| `/opt` | Optional third-party or proprietary software packages | `/opt/google/chrome`, `/opt/VirtualBox`, `/opt/myapp` |
+| `/lib` | Shared libraries needed by programs in `/bin` and `/sbin` | `/lib/libc.so.6`, `/lib/modules`, `/lib/systemd` |
+| `/proc` | Virtual filesystem that provides runtime system info | `/proc/cpuinfo`, `/proc/meminfo`, `/proc/uptime`, `/proc/1/cmdline` |
+| `/tmp` | Temporary files used by system and applications, often cleared on reboot | `/tmp/session.lock`, `/tmp/tmp1234.txt` |
+| `/usr` | Secondary hierarchy for read-only user data; contains utilities and applications | `/usr/bin`, `/usr/lib`, `/usr/share`, `/usr/local` |
+| `/var` | Variable data such as logs, mail, spool files | `/var/log/syslog`, `/var/www`, `/var/spool`, `/var/cache` |
+| `/boot` | Files required for booting the system | `/boot/vmlinuz`, `/boot/grub/grub.cfg`, `/boot/initrd.img` |
+| `/mnt` | Mount point for temporarily mounting filesystems | `/mnt/usb`, `/mnt/backup` |
+| `/media` | Mount point for removable media (USB drives, CDs) | `/media/user/USB_DRIVE`, `/media/cdrom` |
+| `/srv` | Data for services provided by the system (e.g., web, FTP) | `/srv/www`, `/srv/ftp` |
+| `/run` | Temporary runtime data used by system processes | `/run/systemd`, `/run/user/1000` |
+
+
 
 ---
 
